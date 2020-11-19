@@ -3,5 +3,4 @@
 ## Thema der Uebungen
 ### Uebung 2
 
-* Aufgabe 3
-** Einfache Schiffe versenken Anwendung ueber die Konsole
+* Aufgabe 3: Einfache Schiffe versenken Anwendung ueber die Konsole
