@@ -15,6 +15,6 @@ public class Banker extends Person {
         int steuer = super.steuer() + 1000;
 
 
-        if()
+        if()kk
     }
 }
