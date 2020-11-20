@@ -14,7 +14,7 @@ public class Banker extends Person {
     public int steuer() {
         int steuer = super.steuer() + 1000;
 
-
-        if()kk
+        //Steuern könnten größer werden als das Einkommen -> Danke IDE :)
+        return Math.min(steuer, this.zuVersteuerndesEinkommen());
     }
 }

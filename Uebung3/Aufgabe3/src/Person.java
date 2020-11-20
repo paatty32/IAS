@@ -33,6 +33,10 @@ public class Person {
 
     }
 
+    public String toString(){
+        return "Name: " + this.name + " Einkommen: " + this.einkommen + " Zu zahlende Steuer: " + this.steuer();
+    }
+
 
 
 }
