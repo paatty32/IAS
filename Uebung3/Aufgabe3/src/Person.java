@@ -33,8 +33,13 @@ public class Person {
 
     }
 
+
+    public int nettEinkommen(){
+        return this.zuVersteuerndesEinkommen() - steuer();
+    }
     public String toString(){
-        return "Name: " + this.name + " Einkommen: " + this.einkommen + " Zu zahlende Steuer: " + this.steuer();
+        return "Name: " + this.name + " Einkommen(Brutto): " + this.einkommen + " Zu zahlende Steuer: " + this.steuer()
+                + " Einkommen(Netto): " + this.nettEinkommen();
     }
 
 
