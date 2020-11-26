@@ -1,3 +1,5 @@
+package games.basic.position.interfaces;
+
 public interface Positionable {
 
     int getX();
@@ -10,4 +12,8 @@ public interface Positionable {
     /* Extra Methoden */
     void setX(int x);
     void setY(int y);
+    void scaleX(int x);
+    void scaleY(int y);
+    String toString();
+    boolean equals(Object other);
 }

@@ -1,3 +1,7 @@
+package games.basic.position;
+
+import games.basic.position.interfaces.Positionable;
+
 public class Position implements Positionable {
 
     private int x;
@@ -50,4 +54,30 @@ public class Position implements Positionable {
     public void setY(int y) {
         this.y = y;
     }
+
+    @Override
+    public void scaleX(int x) {
+        this.x *= x;
+    }
+
+    @Override
+    public void scaleY(int y) {
+        this.y *= y;
+    }
+
+    @Override
+    public String toString(){
+        return "(" + this.x + "," + this.y + ")";
+    }
+
+    @Override
+    public boolean equals(Object other){
+        if(other == null || !(other instanceof Position) ){
+            return false;
+        }
+        Position otherPos = (Position) other;
+        return ( this.x == otherPos.getX() ) && ( this.y == otherPos.getY() );
+    }
+
+
 }
