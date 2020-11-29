@@ -7,6 +7,15 @@ public class Position implements Positionable {
     private int x;
     private int y;
 
+    public Position(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public Position(){
+
+    }
+
     @Override
     public int getX() {
 

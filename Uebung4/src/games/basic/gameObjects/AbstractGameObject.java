@@ -7,6 +7,11 @@ public abstract class AbstractGameObject implements GameObject {
 
     private Positionable pos;
 
+    //Für die Unterklassen.
+    public AbstractGameObject(Positionable pos){
+        this.pos = pos;
+    }
+
     @Override
     public boolean isLeftOf(GameObject other) {
         if(other == null){
@@ -60,6 +65,7 @@ public abstract class AbstractGameObject implements GameObject {
 
     }
 
+    //Ist die toString Methode, die in Position überschrieben wurde
     @Override
     public Positionable getPos() {
         return this.pos;
@@ -75,4 +81,17 @@ public abstract class AbstractGameObject implements GameObject {
     public int getHeight() {
         return 0;
     }
+
+    @Override
+    public void setPos(Positionable pos){
+        this.pos = pos;
+    }
+
+    @Override
+    public void setPos(int x, int y){
+        this.pos.setX(x);
+        this.pos.setY(y);
+    }
+
+
 }

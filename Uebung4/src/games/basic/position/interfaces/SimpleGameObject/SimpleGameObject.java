@@ -11,4 +11,9 @@ public interface SimpleGameObject {
     int getWidth();
     int getHeight();
 
+    //Zusätzliche Methoden
+    void setPos(Positionable pos);
+    void setPos(int x, int y);
+
+
 }
