@@ -1,7 +1,7 @@
 package games.basic.gameObjects;
 
 import games.basic.position.interfaces.Positionable;
-import games.basic.position.interfaces.SimpleGameObject.GameObject;
+import games.basic.gameObjects.interfaces.GameObject;
 
 public abstract class AbstractGameObject implements GameObject {
 

@@ -1,4 +1,4 @@
-package games.basic.position.interfaces.SimpleGameObject;
+package games.basic.gameObjects.interfaces;
 
 import games.basic.position.interfaces.Positionable;
 
