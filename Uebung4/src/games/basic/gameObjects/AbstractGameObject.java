@@ -9,6 +9,7 @@ public abstract class AbstractGameObject implements GameObject {
 
     //Für die Unterklassen.
     public AbstractGameObject(Positionable pos){
+
         this.pos = pos;
     }
 
