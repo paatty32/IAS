@@ -10,3 +10,6 @@
 
 ## Uebung 4
 * Basis fuer die Entwicklung (einfacher) Spiele in Java. 
+
+## Übung 5
+* Das Programm aus Übung 4 wurde um eine weitere Logger Klasse erweitert, die das Singleton Entwurfsmuster beinhaltet
