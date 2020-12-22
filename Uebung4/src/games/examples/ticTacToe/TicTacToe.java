@@ -20,7 +20,7 @@ public class TicTacToe {
 
     static boolean redTurn;
     static ArrayList<Positionable> loadedPositionals = new ArrayList<Positionable>();
-    static int counter = 0;
+
 
     public static void main(String args[]){
 
@@ -103,7 +103,7 @@ public class TicTacToe {
                             loadedPositionals.add(cross.getPos());
                         }
                     }
-                counter++;
+
 
                 } else { //Kreis ist dran
 
@@ -134,11 +134,10 @@ public class TicTacToe {
                             loadedPositionals.add(circle.getPos());
                         }
                     }
-                    counter++;
 
                 }
                 ticPanel.repaint(); //ruft von allen Elementen die paintComponent methode auf
-                if(counter == 9){
+                if(objectArrayList.size() == 9){
                     JOptionPane.showMessageDialog(null, "Unentschieden!");
                 }
             }
