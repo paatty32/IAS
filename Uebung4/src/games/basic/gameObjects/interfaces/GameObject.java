@@ -1,6 +1,6 @@
 package games.basic.gameObjects.interfaces;
 
-public interface GameObject extends SimpleGameObject {
+public interface GameObject extends SimpleGameObject, PaintableGameObject {
 
     boolean isLeftOf(GameObject other); //befindet sich das Objekt (this) links vom anderen Objekt other ?
     boolean isRightOf(GameObject other);

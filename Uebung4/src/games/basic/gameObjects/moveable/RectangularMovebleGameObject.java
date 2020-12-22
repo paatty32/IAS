@@ -3,6 +3,8 @@ package games.basic.gameObjects.moveable;
 import games.basic.gameObjects.RectangularGameObject;
 import games.basic.position.interfaces.Positionable;
 
+import java.awt.*;
+
 public class RectangularMovebleGameObject extends AbstractMoveableGameObject{
 
     private int width;
@@ -45,4 +47,8 @@ public class RectangularMovebleGameObject extends AbstractMoveableGameObject{
                 this.getDeltaPos().equals(otherRec.getDeltaPos());
     }
 
+    @Override
+    public void paintComponent(Graphics g) {
+
+    }
 }

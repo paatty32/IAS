@@ -2,6 +2,8 @@ package games.basic.gameObjects;
 
 import games.basic.position.interfaces.Positionable;
 
+import java.awt.*;
+
 /**
  * Repräsentiert rechteckige Spielobjekte.
  */
@@ -10,10 +12,21 @@ public class RectangularGameObject extends AbstractGameObject {
     private int height;
     private int width;
 
+    private Color color;
+    private boolean isfilled;
+
     public RectangularGameObject(Positionable positionable, int height, int width){
         super(positionable);
         this.height = height;
         this.width = width;
+    }
+
+    public RectangularGameObject(Positionable positionable, int height, int width, Color color, boolean isfilled){
+        super(positionable);
+        this.height = height;
+        this.width = width;
+        this.color = color;
+        this.isfilled = isfilled;
     }
 
     public int getWidth(){
@@ -55,4 +68,19 @@ public class RectangularGameObject extends AbstractGameObject {
     }
 
 
+    @Override
+    public void paintComponent(Graphics g) {
+        Graphics2D gg = (Graphics2D) g;
+        gg.setStroke(new BasicStroke(5));
+
+        gg.setColor(this.color);
+
+        if (this.isfilled){
+            gg.fillRect(this.getPos().getX(), this.getPos().getY(), this.width, this.height);
+        } else{
+            gg.drawRect(this.getPos().getX(), this.getPos().getY(), this.width, this.height);
+        }
+
+
+    }
 }

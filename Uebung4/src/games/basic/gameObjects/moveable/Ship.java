@@ -2,6 +2,7 @@ package games.basic.gameObjects.moveable;
 
 import games.basic.position.interfaces.Positionable;
 
+import java.awt.*;
 
 
 public class Ship extends AbstractMoveableGameObject {
@@ -59,5 +60,10 @@ public class Ship extends AbstractMoveableGameObject {
                 this.isHorizontal == otherShip.isHorizontal() &&
                 this.size == otherShip.size &&
                 this.getDeltaPos().equals(otherShip.getDeltaPos());
+    }
+
+    @Override
+    public void paintComponent(Graphics g) {
+
     }
 }

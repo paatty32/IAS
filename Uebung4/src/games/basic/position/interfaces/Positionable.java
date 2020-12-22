@@ -16,4 +16,6 @@ public interface Positionable {
     void scaleY(int y);
     String toString();
     boolean equals(Object other);
+
+
 }
